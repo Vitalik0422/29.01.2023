@@ -1,3 +1,30 @@
-.date:not(.on) {
-    display: none;
+.biographyToPeople{
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 50px;
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid rgb(139, 135, 135);
+
+    select {
+        width: 300px;
+        height: 40px;
+    }
+
+    .date:not(.on) {
+        display: none;
+    }
+
+    .date.on {
+        width: 500px;
+    }
+
+    .dateTitle:not(.onn) {
+        display: none;
+    }
+
 }

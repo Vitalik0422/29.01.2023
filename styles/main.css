@@ -1,3 +1,25 @@
-.date:not(.on) {
+.biographyToPeople {
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 50px;
+  width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid rgb(139, 135, 135);
+}
+.biographyToPeople select {
+  width: 300px;
+  height: 40px;
+}
+.biographyToPeople .date:not(.on) {
+  display: none;
+}
+.biographyToPeople .date.on {
+  width: 500px;
+}
+.biographyToPeople .dateTitle:not(.onn) {
   display: none;
 }/*# sourceMappingURL=main.css.map */
