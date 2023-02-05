@@ -11,8 +11,16 @@
     border: 2px solid rgb(139, 135, 135);
 
     select {
-        width: 300px;
+        width: 500px;
         height: 40px;
+    }
+
+    .inpuToNamePeople{
+        width: 500px;
+
+        input {
+            width: 240px;
+        }
     }
 
     .date:not(.on) {
@@ -20,7 +28,7 @@
     }
 
     .date.on {
-        width: 500px;
+        width: 495px;
     }
 
     .dateTitle:not(.onn) {

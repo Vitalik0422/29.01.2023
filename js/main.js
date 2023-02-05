@@ -6,7 +6,7 @@ const name = document.querySelector('.name');
 const inpuToNamePeople = document.querySelector('.inpuToNamePeople')
 
 const dateNow = new Date();
-const age = Number();
+let age;
 let genderSelect = true;
 let firstName;
 let surename;
@@ -19,8 +19,7 @@ let surename;
 date.addEventListener('change', (ev) => {
     age = Number(ev.target.value.substr(0, 4));
     console.log( dateNow );
-
-    massege.innerHTML = dateNow.getFullYear() - age + ' Рочки';
+    massege.innerHTML =`${firstName}, вам ${dateNow.getFullYear() - age}  `;
 
 });
 
@@ -36,6 +35,7 @@ const girlAlertoff = () => {
 
 gender.addEventListener('change', (ev) => {
     console.log ('Gender', ev.target.value )
+
     return ev.target.value == 1 ? genderSelect = true : genderSelect = false, yearsOldOff();
     
 })
@@ -80,5 +80,10 @@ const yearsOld = () => {
 const yearsOldOff = () => {
     date.classList.remove('on')
     dateTitle.classList.remove('onn')
+    inpuToNamePeople[0].value = '';
+    inpuToNamePeople[1].value = '';
+    firstName = '';
+    surename = '';
+    massege.innerHTML ='';
 }
 

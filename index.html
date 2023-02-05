@@ -16,8 +16,8 @@
     </select>
     <h3 class="name">Ведіть прізвище та ім'я</h3>
     <form class="inpuToNamePeople">
-        <input type="text" placeholder="Ім'я">
-        <input type="text" placeholder="Прізвище">
+        <input type="text" oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-ЯїЇіІ]/g,'');" placeholder="Ім'я">
+        <input type="text" oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-ЯїЇіІ]/g,'');" placeholder="Прізвище">
     </form>
     <h3 class="dateTitle">Ведіть дату народження</h3>
     <input type="date" name="" id="" class="date">

@@ -11,14 +11,20 @@
   border: 2px solid rgb(139, 135, 135);
 }
 .biographyToPeople select {
-  width: 300px;
+  width: 500px;
   height: 40px;
+}
+.biographyToPeople .inpuToNamePeople {
+  width: 500px;
+}
+.biographyToPeople .inpuToNamePeople input {
+  width: 240px;
 }
 .biographyToPeople .date:not(.on) {
   display: none;
 }
 .biographyToPeople .date.on {
-  width: 500px;
+  width: 495px;
 }
 .biographyToPeople .dateTitle:not(.onn) {
   display: none;
